@@ -274,6 +274,7 @@ input[type=text], select, textarea {
 /*---------------- Mobile -----------------------------------------------*/
 @media (max-width: 767px){
     .title{
+        width: 200%;
         font-size: 50px;
     }
 
@@ -284,6 +285,13 @@ input[type=text], select, textarea {
         font-weight: 400;
         margin-left: 15px;
     }
+    .slider {
+        position: absolute;
+        height: 100vh;
+        width: 200%;
+        z-index: -1;
+    }
+    
     .left {
         width: 100px;
         margin-left: 0%;
@@ -295,7 +303,8 @@ input[type=text], select, textarea {
     }
     .experience0 .right li{
         list-style: none;
-        font-size: 10px;
+        width: 250%;
+        font-size: 20px;
         font-weight: 700;
         margin-left: 20px;
     }
@@ -310,23 +319,48 @@ input[type=text], select, textarea {
         height: 200px;
         width: 200px;
         object-fit:scale-down;
-        margin-left:0%;
+        padding:10%;
 
     }
     
     .right p{
-        font-size: 10px;
-        margin-right: 0%;
+        list-style: none;
+        width: 600%;
+        font-size: 20px;
+        font-weight: 400;
+        margin-left: 100px;
+
     }
     
     .phrase{
-        font-size: 10px;
+        list-style: none;
+        width: 400%;
+        font-size: 20px;
+        font-weight: 400;
+        margin-left: 100px;
     }
     
     .name{
-        font-size: 15px;
-        font-weight: 400;
+        list-style: none;
+        width: 400%;
+        font-size: 20px;
+        font-weight: 700;
+        margin-left: 100px;
     }
+    input[type=text], select, textarea {
+        width: 300%;
+      }
+      
+    #subject {
+        height: 100px;
+    }
+    .leftcontact{
+        margin-left: 5%;
+      }
+      .rightcontact{
+        margin-right: 65%;
+      }
+
 
 }
 /*------------------------Tablet------------------------------------- */
@@ -353,6 +387,11 @@ input[type=text], select, textarea {
         width: 40%;
         text-align: justify;
         font-family: 'Inter', sans-serif;
+    }
+    .row {
+        padding-bottom: 10px;
+        font-size: 20px;
+      
     }
     .experience0 .right li{
         list-style: none;
