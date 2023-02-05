@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
 *{
     margin: 0;
@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: 'Monda', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 
 /* NavBar style in page  */
@@ -36,6 +36,7 @@ body{
     height: 30px;
     list-style:none;
     display:inline-flex;
+    padding-left: 15px;
     font-size: 12px;
     font-weight: 400;
     margin-left: 30px;
@@ -60,20 +61,64 @@ body{
 #hero{
     position: relative;
     width: 100%;
-    height: calc(80vh - 50px);
-    background-color: red;
+    height: calc(100vh - 50px);
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    transition: all .4000s ease-in-out;
+    background-image: url('hero1.jpg');
+    background-color: rgba(0, 22, 40, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
 
+}
+#hero-content{
+    margin: 0;
+    padding-top: 100px;
+    width: 100%;
+    color:white;
+}
+
+#hero-content h1{
+    margin:0;
+    padding:0;
+    padding-bottom: 30px;
+    font-size: 700 px;
+    text-align: center;
+    color: white;
+
+
+}
+#hero-content p{
+    color:aqua;
 }
 
 
 
 
-
 /* Vista Responsive para los diferentes dispositivos */
+/* Mobile */
+@media (max-width: 767px){
+    
 
+    #NavBar #sections li {
+        width: 25px;
+        height: 30px;
+        font-size: 7px;
+        font-weight: 400;
+        margin-left: 15px;
+    }
+    #hero{
+        height: calc(75vh - 50px);
+    }
+}
 /*Tablet */
-@media (min-width: 768px){
-
+@media (min-width: 768px) and (max-width: 1023px){
+    #NavBar{
+        height: 50px;
+    }
     #NavBar #sections li {
         width: 80px;
         height: 15px;
@@ -81,15 +126,24 @@ body{
         font-weight: 400;
         margin-left: 20px;
     }
+    #hero{
+        height: calc(105vh - 50px);
+    }
 }
 
 /* Desktop */
 @media (min-width: 1024px){
+    #NavBar{
+        height: 50px;
+    }
     #NavBar #sections li {
-        width: 250px;
+        width: 150px;
         height: 30px;
         font-size: 25px;
         font-weight: 400;
         margin-left: 20px;
+    }
+    #hero{
+        height: calc(100vh - 50px);
     }
 }
