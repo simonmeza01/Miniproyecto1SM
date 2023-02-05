@@ -170,7 +170,63 @@ img{
     font-weight: 600;
 }
 
+/* --------------------------Skills style in page ---------------------------------- */
 
+.skills .stats{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.stats {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.section-skills {
+    max-width: 80%;
+    padding: 0 75px;
+    margin: auto;
+}
+
+.bar{
+    height: 5px;
+    width: 100%;
+    background: gray;
+    position: relative;
+}
+
+.bar::before{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgb(93, 169, 219);
+
+}
+
+.html::before{
+    width: 80%;
+}
+.css::before{
+    width: 65%;
+}
+.js::before{
+    width: 60%;
+}
+.python::before{
+    width: 90%;
+}
+.java::before{
+    width: 75%;
+}
+
+.excel::before{
+    width: 95%;
+}
+.c::before{
+    width: 70%;
+}
 
 /*----------------------- Vista Responsive para los diferentes dispositivos------------------------------------------ */
 /*---------------- Mobile -----------------------------------------------*/
@@ -180,7 +236,7 @@ img{
     }
 
     #NavBar #sections li {
-        width: 25px;
+        width: 20px;
         height: 30px;
         font-size: 7px;
         font-weight: 400;
@@ -188,22 +244,46 @@ img{
     }
     .left {
         width: 100px;
-        margin-left: 5%;
+        margin-left: 0%;
     }
     .right {
-        width: 50%;
+        width: 22%;
         text-align: justify;
         font-family: 'Inter', sans-serif;
     }
     .experience0 .right li{
         list-style: none;
-        font-size: 12px;
+        font-size: 10px;
         font-weight: 700;
         margin-left: 20px;
     }
     img{
-        height: 150px;
-        width: 150px;
+        height: 100%;
+        width: 100%;
+    }
+    .about0 {
+        display: flex;
+    }
+    .left img{
+        height: 200px;
+        width: 200px;
+        object-fit:scale-down;
+        margin-left:0%;
+
+    }
+    
+    .right p{
+        font-size: 10px;
+        margin-right: 0%;
+    }
+    
+    .phrase{
+        font-size: 10px;
+    }
+    
+    .name{
+        font-size: 15px;
+        font-weight: 400;
     }
 
 }
@@ -228,7 +308,7 @@ img{
         margin-left: 5%;
     }
     .right {
-        width: 50%;
+        width: 40%;
         text-align: justify;
         font-family: 'Inter', sans-serif;
     }

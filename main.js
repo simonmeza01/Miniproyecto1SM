@@ -36,3 +36,31 @@ function changeImg() {
 window.onload = changeImg;
 
 
+//Jason Skills
+
+let skills = '{ "skills" : [' +
+'{ "html":"80%"},' + '{"css":"65%" },' +
+'{ "javascript":"60%"},' + '{"python":"90%" },' +
+'{ "java":"75%"},' + '{ "excel":"95%"},' + '{ "c":"70%"}]}';
+
+let obj = JSON.parse(skills);
+
+document.getElementById("html").innerHTML =
+'HTML:' + ' ' + obj.skills[0].html;
+
+document.getElementById("css").innerHTML =
+'CSS:' + ' ' + obj.skills[1].css;
+
+document.getElementById("javascript").innerHTML =
+'JavaScript:' + ' ' + obj.skills[2].javascript;
+
+document.getElementById("python").innerHTML =
+'Python:' + ' ' + obj.skills[3].python;
+
+document.getElementById("Java").innerHTML =
+'Java:' + ' ' + obj.skills[4].java;
+
+document.getElementById("excel").innerHTML =
+'Excel:' + ' ' + obj.skills[5].excel;
+document.getElementById("c").innerHTML =
+'C:' + ' ' + obj.skills[6].c;
