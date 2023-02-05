@@ -1,16 +1,4 @@
-//Navbar
-let beforeScroll = window.pageYOffset;
-window.onscroll = function() {
-let currentScroll = window.pageYOffset;
-  if (beforeScroll > currentScroll) {
-    document.getElementById("navv").style.top = "0";
-  } else {
-    document.getElementById("navv").style.top = "-100px";
-  }
-  beforeScroll = currentScroll;
-}
-
-// Hero en js 
+//-------------------------------- Hero en js 
 let i = 0;
 let img = [];
 let time = 5000;
@@ -36,7 +24,7 @@ function changeImg() {
 window.onload = changeImg;
 
 
-//Jason Skills
+//------------------------------Jason Skills
 
 let skills = '{ "skills" : [' +
 '{ "html":"80%"},' + '{"css":"65%" },' +
@@ -44,7 +32,7 @@ let skills = '{ "skills" : [' +
 '{ "java":"75%"},' + '{ "excel":"95%"},' + '{ "c":"70%"}]}';
 
 let obj = JSON.parse(skills);
-
+// -----------------------Representacion de la barra-------
 document.getElementById("html").innerHTML =
 'HTML:' + ' ' + obj.skills[0].html;
 
@@ -65,7 +53,7 @@ document.getElementById("excel").innerHTML =
 document.getElementById("c").innerHTML =
 'C:' + ' ' + obj.skills[6].c;
 
-
+//-------------------------------Contact ME alert for the client-------------------------
 function checkForm() {
     let text = document.getElementById("form").submit();
     console.log(text);
